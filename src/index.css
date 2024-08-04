@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'HighCruiser-PersonalUseOnly';
+    src: url('/fonts/HighCruiser-PersonalUseOnly.ttf')
+}
+@font-face {
+    font-family: 'Candice\ Personal\ Use';
+    src: url('/fonts/Candice\ Personal\ Use.ttf')
+}
+@font-face {
+    font-family: 'Psalta-Regular';
+    src: url('/fonts/Psalta-Regular.ttf')
+}
+@font-face {
+    font-family: 'GENNARO';
+    src: url('/fonts/GENNARO.ttf')
+}
+@font-face {
+    font-family: 'RobotoMono-VariableFont_wght';
+    src: url('/fonts/RobotoMono-VariableFont_wght.ttf')
+}
+
+.anchor{
+    font-family: 'HighCruiser-PersonalUseOnly';
+        backdrop-filter: blur(8px);
+    
+}
+.anuj{
+    font-family: 'Candice\ Personal\ Use';
+}
+
+.about{
+    font-family: 'RobotoMono-VariableFont_wght';
+}
+
+
+.landing{
+    font-family: 'HighCruiser-PersonalUseOnly';
+}
+
+.bg1{
+    object-fit: cover;
+}
+
+.card{
+    font-family: 'RobotoMono-VariableFont_wght';
+}
