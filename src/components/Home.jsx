@@ -3,11 +3,20 @@ import "remixicon/fonts/remixicon.css";
 import anuj from "../../public/imgs/photo.png"
 import bg2 from "../../public/imgs/bg2.jpg"
 import { motion } from "framer-motion";
+import Line from "../utilis/Line";
+import Nav from "./Nav";
 
 
 function Home() {
   return (
     <div className="  h-screen w-full bg-[#000000ef]">
+       
+       <Line/>
+      
+      <div className=" fixed z-[9999] h-[10vh] w-full top">
+        <Nav />
+      </div>
+
       <div className="">
         <img className=" opacity-10 h-[40%] w-[80%]" src={bg2} alt="" />
       </div>

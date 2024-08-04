@@ -46,5 +46,9 @@
 }
 
 .card{
+    font-family: 'HighCruiser-PersonalUseOnly';
+}
+
+.find{
     font-family: 'RobotoMono-VariableFont_wght';
 }
