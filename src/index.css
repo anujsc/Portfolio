@@ -23,6 +23,9 @@
     src: url('/fonts/RobotoMono-VariableFont_wght.ttf')
 }
 
+body{
+    overflow-x: hidden;
+}
 .anchor{
     font-family: 'HighCruiser-PersonalUseOnly';
         backdrop-filter: blur(8px);
@@ -52,3 +55,10 @@
 .find{
     font-family: 'RobotoMono-VariableFont_wght';
 }
+
+.flair {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    pointer-events: none;
+  }

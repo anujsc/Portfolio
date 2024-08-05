@@ -27,3 +27,10 @@ function Nav() {
 }
 
 export default Nav;
+{/* <div className=" flex gap-[8vh] text-white text-[3vh] -tracking-tighter font-semibold">
+<Link to="/">Home <span className=" text-[#116466]">/&gt;</span></Link>
+<Link to="/About">About <span className=" text-[#116466]">/&gt;</span></Link>
+<Link to="/Projects">Projects <span className=" text-[#116466]">/&gt;</span></Link>
+<Link to="/Contact">Contact <span className=" text-[#116466]">/&gt;</span></Link>
+
+</div> */}

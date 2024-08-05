@@ -1,10 +1,13 @@
 import React from 'react'
 import Introsec from '../utilis/Introsec'
+import ResumeDownload from '../utilis/ResumeDownload'
 
 function Contact() {
   return (
     <div className=' relative h-screen w-full bg-[#151818ef] '>
         <Introsec name={"Contact"} icon={<i class="ri-phone-line"></i>} />
+        <ResumeDownload/>
+        
 
         <div className="find absolute font-semibold opacity-75 text-[white] text-[5vh] tracking-tight left-[23%] top-[16%]">
             <p>Find me here :</p>
@@ -23,12 +26,6 @@ function Contact() {
        </div>
 
         </div>
-
-        
-
-        
-
-
     </div>
   )
 }

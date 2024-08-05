@@ -34,7 +34,7 @@ function About() {
     <div className=" h-screen w-full bg-[#000000e0]">
       <Introsec name={"About"} icon={<i class="ri-user-line"></i>}/>
 
-      <div className="about pt-[19vh] ">
+      <div className="about text-[2.3vh] pt-[19vh] ">
         <h1 className="01 flex hover:bg-[#3a4646ca] duration:200 gap-[6.7vh] pl-[39vh]">
           <span className=" text-[white] opacity-40">01</span>
           <span className=" text-[yellow]">

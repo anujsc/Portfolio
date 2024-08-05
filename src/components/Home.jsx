@@ -1,13 +1,43 @@
-import React from "react";
+import React, { useRef } from "react";
 import "remixicon/fonts/remixicon.css";
 import anuj from "../../public/imgs/photo.png"
 import bg2 from "../../public/imgs/bg2.jpg"
 import { motion } from "framer-motion";
 import Line from "../utilis/Line";
 import Nav from "./Nav";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap/all";
 
 
 function Home() {
+   gsap.registerPlugin(useGSAP);
+   const zero = useRef(null)
+   const first = useRef(null)
+   const sec= useRef(null)
+
+  useGSAP(()=>{
+      var tl = gsap.timeline();
+    tl.from(first.current,{
+      x:-900,
+      opacity:0,
+      ease:"bounce.out",
+      duration:2
+    },"a")
+    tl.from(sec.current,{
+      x:900,
+      opacity:0,
+      ease:"bounce.out",
+      duration:2
+      
+    },"a")
+    tl.from(zero.current,{
+     y:50,
+     ease:"circ.inOut",
+     duration:0.5,
+     opacity:0,
+      
+    })
+  })
   return (
     <div className="  h-screen w-full bg-[#000000ef]">
        
@@ -26,16 +56,16 @@ function Home() {
         </p>
 
         <div className=" text-[7vh] leading-[9vh] font-semibold">
-          <p>
+          <p ref={first} className="opacity-100">
             Hi, my name is <span className="anuj font-thin text-[#116466]">Anuj Chaudhari</span>
           </p>
-          <p>
+          <p ref={sec} className="opacity-100">
             i<span className=" italic font-light"> design</span> and develop website
           </p>
         </div>
 
         <div>
-          <p className=" text-[2.6vh] tracking-tight font-light opacity-70 ">
+          <p ref={zero} className=" text-[2.6vh] tracking-tight font-light opacity-70 ">
             Let me show You...
           </p>
         </div>
@@ -48,7 +78,7 @@ function Home() {
 
       <div className=" absolute  top-[80%] left-[19.8%]">
       <i class="text-[white] opacity-75  text-[4vh] ri-mouse-line"></i>
-      <p className=" -translate-x-[1vh] opacity-100 rotate-90 py-3 text-[2.5vh] text-[#116466]">Scroll</p>
+      <p className=" hover:rotate-0 duration-200 -translate-x-[1vh] opacity-100 rotate-90 py-3 text-[2.5vh] text-[#116466]">Scroll</p>
       </div>
     </div>
   );
