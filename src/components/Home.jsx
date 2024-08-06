@@ -7,6 +7,7 @@ import Line from "../utilis/Line";
 import Nav from "./Nav";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap/all";
+import ChangingText from "../utilis/ChangingText ";
 
 
 function Home() {
@@ -14,18 +15,19 @@ function Home() {
    const zero = useRef(null)
    const first = useRef(null)
    const sec= useRef(null)
+   const fourth= useRef(null)
 
   useGSAP(()=>{
       var tl = gsap.timeline();
     tl.from(first.current,{
       x:-900,
-      opacity:0,
+      opacity:"0",
       ease:"bounce.out",
       duration:2
     },"a")
     tl.from(sec.current,{
       x:900,
-      opacity:0,
+      opacity:"0",
       ease:"bounce.out",
       duration:2
       
@@ -34,9 +36,15 @@ function Home() {
      y:50,
      ease:"circ.inOut",
      duration:0.5,
-     opacity:0,
+     opacity:"0",
       
     })
+    tl.to(fourth.current,{
+      ease:"circ.inOut",
+      duration:1,
+      opacity:"100",
+       
+     })
   })
   return (
     <div className="  h-screen w-full bg-[#000000ef]">
@@ -59,8 +67,8 @@ function Home() {
           <p ref={first} className="opacity-100">
             Hi, my name is <span className="anuj font-thin text-[#116466]">Anuj Chaudhari</span>
           </p>
-          <p ref={sec} className="opacity-100">
-            i<span className=" italic font-light"> design</span> and develop website
+          <p ref={sec} className=" flex gap-4 opacity-100">
+            i<span className=" italic font-light"> design</span> and <span className=" italic font-thin"> develop </span><ChangingText/>
           </p>
         </div>
 
@@ -70,7 +78,7 @@ function Home() {
           </p>
         </div>
       </div>
-      <motion.div className=" absolute top-[13%] left-[68%] hover:scale-[1.1] duration-200">
+      <motion.div ref={fourth} className=" opacity-0 absolute top-[13%] left-[68%] hover:scale-[1.1] duration-200">
         <img className=" h-[60vh]" src={anuj} alt="" />
       </motion.div>
       

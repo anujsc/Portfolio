@@ -10,7 +10,9 @@ import Line from "./utilis/Line";
 import LocomotiveScroll from "locomotive-scroll";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap/all";
-import cursor from "../public/imgs/cursor.jpeg"
+import cursor from "../public/imgs/cursor.jpeg";
+import { motion } from "framer-motion";
+import Cursor from "./utilis/Cursor";
 
 function App() {
   const locomotiveScroll = new LocomotiveScroll();
@@ -29,10 +31,7 @@ function App() {
 
   return (
     <>
-      <div className="flair -translate-y-[15vh] bg-slate-500 rounded-full w-[5vh] h-[5vh]">
-        <img className=" rounded-full opacity-80" src={cursor} alt="" />
-      </div>
-      <button className="cursor text-[#116466] font-semibold z-[99999]  px-3 py-3 absolute top-[79.5%] left-[21.5%] rounded-full text-[2.4vh] tracking-tighter" onClick={()=>chlja()}>Click Me <i class="pl-1 text-[2.6vh] ri-megaphone-line"></i> </button>
+     <Cursor chlja={()=>chlja()}/>
       <Home />
       <About />
       <Projects />
@@ -40,5 +39,7 @@ function App() {
     </>
   );
 }
-
+{
+  /* <button className="cursor text-[#116466] z-[99999]  px-3 py-3 absolute top-[68.5%] left-[17.2%] rotate-90 rounded-full text-[2.4vh] tracking-tighter" onClick={()=>chlja()}>Click Me <i class="pl-1 text-[2.6vh] ri-megaphone-line"></i> </button> */
+}
 export default App;

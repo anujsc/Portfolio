@@ -92,7 +92,7 @@ function Projects() {
         className=" absolute opacity-0 top-[60%] left-[63%]">
           <Card
             no={"04"}
-            title={"Exope agency"}
+            title={"Portfolio webs"}
             img={portfolio}
             link={"https://github.com/anujsc/Portfolio"}
           />
