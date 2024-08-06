@@ -29,7 +29,7 @@ function App() {
 
   return (
     <>
-      <div className="flair  bg-slate-500 rounded-full w-[5vh] h-[5vh]">
+      <div className="flair -translate-y-[15vh] bg-slate-500 rounded-full w-[5vh] h-[5vh]">
         <img className=" rounded-full opacity-80" src={cursor} alt="" />
       </div>
       <button className="cursor text-[#116466] font-semibold z-[99999]  px-3 py-3 absolute top-[79.5%] left-[21.5%] rounded-full text-[2.4vh] tracking-tighter" onClick={()=>chlja()}>Click Me <i class="pl-1 text-[2.6vh] ri-megaphone-line"></i> </button>
