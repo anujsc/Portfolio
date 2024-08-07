@@ -8,7 +8,7 @@ function About() {
       this:"this",
       sec:"name",
       eq:"=",
-      last:"Anuj Chuadhari"
+      last:"Anuj Chaudhari"
     },
     {
       no:"06",
@@ -22,7 +22,7 @@ function About() {
       this:"this",
       sec:"email",
       eq:"=",
-      last:"anujpvt23@gmail.com"
+      last:"anujpvt2311@gmail.com"
     }
   ]
 
@@ -96,7 +96,7 @@ function About() {
          <span className=" text-white">｛</span>
          <span className=" text-[#24E23A]">'2019'</span>
          <span className=" text-white">:</span>
-         <span  className=" text-[#24E23A]" >'Swami Vivekanad Vidya Mandir, Raver - 10th'</span>
+         <span  className=" text-[#24E23A]" >'Swami Vivekanand Vidya Mandir, Raver - 10th'</span>
          <span className=" text-white">,</span>
           </span>
         </h1>
@@ -106,7 +106,7 @@ function About() {
          <span className=" text-transparent">｛</span>
          <span className=" text-[#24E23A]">'2021'</span>
          <span className=" text-white">:</span>
-         <span  className=" text-[#24E23A]" >'Sardar.G.G.Hghschool, Raver - 12th'</span>
+         <span  className=" text-[#24E23A]" >'Sardar.G.G.Highschool, Raver - 12th'</span>
          <span className=" text-white">,</span>
           </span>
         </h1>
@@ -114,9 +114,9 @@ function About() {
           <span className=" text-[white] opacity-40">13</span>
           <span className=" text-[#17898b]">
          <span className=" text-transparent">｛</span>
-         <span className=" text-[#24E23A]">'2021-present'</span>
+         <span className=" text-[#24E23A]">'2021-Present'</span>
          <span className=" text-white">:</span>
-         <span  className=" text-[#24E23A]" >'Sinhgad Instotute Of Technology, Lonavala - B.E-COMP ENGG.'</span>
+         <span  className=" text-[#24E23A]" >'Sinhgad Institute Of Technology, Lonavala - B.E-COMP ENGG.'</span>
          <span className=" text-white">,</span>
           </span>
         </h1>
