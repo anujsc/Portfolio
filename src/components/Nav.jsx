@@ -13,7 +13,7 @@ function Nav() {
       <div className=" flex gap-[8vh] text-white text-[3vh] -tracking-tighter font-semibold">
         {["Home", "About", "Project", "Contact"].map((i, j) => (
           <motion.h1
-          drag dragConstraints={{ x: 400, y: 400 }}
+          drag dragConstraints={{ x:10, y:10 }}
           >
             <div>
               {i} <span className=" text-[#116466]">/&gt;</span>

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { Suspense, useRef } from "react";
 import "remixicon/fonts/remixicon.css";
 import anuj from "../../public/imgs/photo.png"
 import bg2 from "../../public/imgs/bg2.jpg"
@@ -48,7 +48,8 @@ function Home() {
   })
   return (
     <div className="  h-screen w-full bg-[#000000ef]">
-       
+      <Suspense>
+         
        <Line/>
       
       <div className=" fixed z-[9999] h-[10vh] w-full top">
@@ -56,6 +57,7 @@ function Home() {
       </div>
 
       <div className="">
+        
         <img className=" opacity-10 h-[40%] w-[80%]" src={bg2} alt="" />
       </div>
       <div className=" flex flex-col gap-[7vh] absolute top-[30.5%] left-[23%] text-white">
@@ -88,6 +90,7 @@ function Home() {
       <i class="text-[white] opacity-75  text-[4vh] ri-mouse-line"></i>
       <p className=" hover:rotate-0 duration-200 -translate-x-[1vh] opacity-100 rotate-90 py-3 text-[2.5vh] text-[#116466]">Scroll</p>
       </div>
+      </Suspense>
     </div>
   );
 }

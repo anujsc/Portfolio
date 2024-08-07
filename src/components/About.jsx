@@ -31,7 +31,10 @@ function About() {
   ]
   
   return (
-    <div className=" h-screen w-full bg-[#000000e0]">
+  <div className=" overflow-hidden">
+      <div
+      data-scroll data-scroll-speed="-1" 
+      className=" h-screen w-full bg-[#000000e0]">
       <Introsec name={"About"} icon={<i class="ri-user-line"></i>}/>
 
       <div className="about text-[2.3vh] pt-[19vh] ">
@@ -174,6 +177,7 @@ function About() {
 
       <div className=" bg-slate-400 "></div>
     </div>
+  </div>
   );
 }
 
